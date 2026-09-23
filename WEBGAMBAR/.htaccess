@@ -1,0 +1,9 @@
+Options -Indexes
+
+<FilesMatch "^(config\.php|smtp_test\.php|._\.json|\.env._|.\*\.sql|composer\.json|composer\.lock)$">
+Require all denied
+</FilesMatch>
+
+<FilesMatch "^(get_oauth_token\.php)$">
+Require all denied
+</FilesMatch>
